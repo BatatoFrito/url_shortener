@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <span>URL to shorten:</span>
+        <span><input type="text" name="url" value="{{short_url if short_url}}"/></span>
+        <span><input type="submit" value="Shorten" /></span>
+    </form>
+    {% if short_url %}
+    <span>URL shortened!</span>
+    {% endif %}
+</body>
+</html>
